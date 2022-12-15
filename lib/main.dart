@@ -12,15 +12,29 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        body: Center(
+          child: Container(
+            color: Colors.black,
+           // shape:BoxShape.circle,
+
+          ),
+        ),
        // backgroundColor: Colors.blueAccent,
         appBar: AppBar(backgroundColor: Colors.black,
           title: Text("hi im me"),
-        
+
         ),
       ),
     );
       
 }
+}
 
+class test extends StatelessWidget {
+  const test({Key? key}) : super(key: key);
 
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
 }
